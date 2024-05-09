@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.headings{
+	font-family: serif;
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+	background-color: green;
+	display: flex;
+	flex-direction: column;
+}
+#intro{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	background-color: white;	
+	color: black;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(shs.jpg);
+	height: 715px;
+	width: 100%; 
+}
+#intro h2{
+	font-size: 2rem;
+	margin-bottom: 20px;
+	background-color: yellow;
+	color: black;
+	text-align: center;
+}
+#intro h3,
+#intro h4{
+	font-size: 1.70rem;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+.btn{
+	align-items: center;
+	padding: 10px 35px;
+	background-color: green;
+	border:2px solid lightgreen;
+	color: white;
+	outline: none;
+	transition: .6s ease;
+	text-align: center;
+	margin-left:500px;
+	margin-right:500px;
+}
+.btn:hover{
+	cursor: pointer;
+	background-color: green;
+	color: white;
+	box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+	font-weight: bold;
+}

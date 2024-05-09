@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/4181Malinta_Maysan_Roads_Buildings_Valenzuela_City_40.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrapper ul{
+    list-style: none;
+    margin-top: 1PX;
+    display: inline-block;
+}
+.wrapper ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.wrapper ul li a::after{
+    content: '';
+    width: 5%;
+    height: 3px;
+    background: cadetblue;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.wrapper ul li a:hover::after{
+    width: 100%;
+}
+.wrapper ul li{
+    background: transparent;
+    width: 170px;
+    border: none;
+    height: 40px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+}
+.wrapper ul li:hover{
+    background: transparent;
+}
+.wrapper ul ul{
+    display: none;
+}
+.wrapper ul li:hover > ul{
+    display: block;
+}
+.wrapper ul ul ul{
+    margin-left: 170px;
+    top: 0;
+    position: absolute;
+}
+  .item-1, 
+  .item-2, 
+  .item-3 {
+    position: absolute;
+    display: flex;
+    color: #fff;
+    top: 35%;
+    width: 70%;
+    font-size: 50px;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  
+.item-1{
+      animation-name: anim-1;
+  }
+.item-2{
+    animation-name: anim-2;
+}
+.item-3{
+    animation-name: anim-3;
+}
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 20%; opacity: 1; }
+  33.33%, 100% { left: 10%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 20%; opacity: 1; }
+  66.66%, 100% { left: 10%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 20%; opacity: 1; }
+  92.38%, 100% { left: 10%; opacity: 0; }
+}
+
+/*------ Education ------*/
+
+.education{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+
+}
+h1{
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    text-decoration-style: solid;
+    text-overflow: ellipsis;
+
+}
+h2{
+    font-size: 30px;
+    font-weight: 100
+}
+.education-col p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+h3{
+    font-size: 30px;
+    font-weight: 100
+}
+.education-col{
+    flex-basis: 31%;
+    background: #f6f6eb;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.education-col:hover{
+    box-shadow:  0 0 20px 0px rgba(0,0,0,0.2);
+}
+.button{
+    position: relative;
+    border: 0;
+    display: inline-block;
+    width: 12rem;
+    height: auto;
+    outline: auto;
+    vertical-align: middle;
+    background: transparent;
+}
+.campus-col p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.campus .row{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.campus-col{
+    flex-basis: 31%;
+    background-color: burlywood;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    column-gap: 40px;
+}
+.campus-col:hover{
+    box-shadow:  0 0 20px 0px rgba(0,0,0,0.5);
+}
